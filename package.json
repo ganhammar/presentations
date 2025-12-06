@@ -1,0 +1,17 @@
+{
+  "name": "presentations",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "slidev build presentations/${npm_config_name}/slides.md",
+    "dev": "slidev --open presentations/${npm_config_name}/slides.md",
+    "export": "slidev export presentations/${npm_config_name}/slides.md"
+  },
+  "dependencies": {
+    "@slidev/cli": "^52.8.0",
+    "@slidev/theme-apple-basic": "^0.25.1",
+    "@slidev/theme-default": "latest",
+    "@slidev/theme-seriph": "latest",
+    "vue": "^3.5.24"
+  }
+}
