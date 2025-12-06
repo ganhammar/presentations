@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "build": "zx build.mjs",
-    "build-slide": "slidev build presentations/${npm_config_name}/slides.md --out=${npm_config_out} --download --base=${npm_config_name}",
+    "build-slide": "slidev build presentations/${npm_config_name}/slides.md --out=${npm_config_out} --download --base=/${npm_config_name}/",
     "dev": "slidev --open presentations/${npm_config_name}/slides.md",
     "export": "slidev export presentations/${npm_config_name}/slides.md"
   },
