@@ -323,7 +323,7 @@ image: './assets/avm-logo.png'
 layout: section
 ---
 
-## Step 1: Migrate Platform Resources
+## Step 1: [Migrate Platform Resources](https://github.com/ganhammar/avm-alz-platform-vending-sample/tree/step-1)
 
 * Management Groups and Policy Pattern Module ([avm-ptn-alz](https://registry.terraform.io/modules/Azure/avm-ptn-alz))
 * Hub and Spoke Pattern Module ([avm-ptn-alz-connectivity-hub-and-spoke-vnet](https://registry.terraform.io/modules/Azure/avm-ptn-alz-connectivity-hub-and-spoke-vnet/azurerm/0.16.2))
@@ -331,7 +331,7 @@ layout: section
 
 ---
 
-# Step 2: Subscription Vending Machine
+# Step 2: [Subscription Vending Machine](https://github.com/ganhammar/avm-alz-platform-vending-sample/tree/step-2)
 
 <div class="absolute inset-0 flex items-center justify-center">
   <img src="./assets/subscription-vending.png" alt="Subscription Vending" class="w-200" />
@@ -357,7 +357,7 @@ layout: section
 
 ---
 
-# Step 3: Vending Network Spokes
+# Step 3: [Vending Network Spokes](https://github.com/ganhammar/avm-alz-platform-vending-sample/tree/step-3)
 
 <div class="absolute inset-0 flex items-center justify-center">
   <img src="./assets/subscription-vending-with-network.png" alt="Subscription Vending With Network" class="h-80" />
@@ -402,7 +402,7 @@ layout: section
 layout: section
 ---
 
-## Step 4: Democratizing Private DNS Zones
+## Step 4: [Democratizing Private DNS Zones](https://github.com/ganhammar/avm-alz-platform-vending-sample/tree/step-4)
 
 Handle DNS joins through Azure Policies, provided through ALZ library and fix Private Resolver architecture.
 
@@ -511,6 +511,17 @@ Transition to next slide: "Innovations such as:"
 layout: fact
 ---
 
-# Thanks!
-## Questions?
-[linkedin.com/in/ganhammar](https://linkedin.com/in/ganhammar) | [github.com/ganhammar](https://github.com/ganhammar) | [ganhammar.se](https://ganhammar.se)
+<div class="flex flex-col items-center gap-8">
+  <div class="text-center">
+    <h1>Thanks!</h1>
+    <h2>Questions?</h2>
+    <p>
+      <a href="https://linkedin.com/in/ganhammar">linkedin.com/in/ganhammar</a> |
+      <a href="https://github.com/ganhammar">github.com/ganhammar</a> |
+      <a href="https://ganhammar.se">ganhammar.se</a>
+    </p>
+  </div>
+  <div class="flex items-center flex-col">
+    <img src="./assets/qr-code.png" alt="QR Code to presentation" class="w-25 h-25" style="border: 5px solid white;" />
+  </div>
+</div>
