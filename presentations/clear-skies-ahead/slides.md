@@ -1,11 +1,12 @@
 ---
 theme: apple-basic
 title: "Clear Skies Ahead: Platform Acceleration with Azure Verified Modules for Terraform"
-description: Discover how our platform engineering team transformed Azure infrastructure delivery from slow, ticket‑driven requests into fast, developer‑initiated self‑service. By implementing Azure Verified Modules (AVM) for Terraform, we standardized and automated our Azure Landing Zone, cutting lead times while maintaining security and compliance. This approach allows Horse Powertrain’s developers to quickly build the cloud resources they need without bottlenecks, and gives the central team more time to focus on innovation.
+description: Discover how our platform engineering team transformed Azure infrastructure delivery from slow, ticket‑driven requests into fast, developer‑initiated self‑service. By implementing Azure Verified Modules (AVM) for Terraform, we standardized and automated our Azure Landing Zone, cutting lead times while maintaining security and compliance. This approach allows Horse Powertrain's developers to quickly build the cloud resources they need without bottlenecks, and gives the central team more time to focus on innovation.
 colorSchema: 'dark'
 transition: slide-left
 image: './assets/clear-skies-ahead.jpg'
 layout: intro-image
+routerMode: 'hash'
 ---
 
 <div class="absolute bottom-15">
@@ -38,20 +39,20 @@ layout: section
 * I joined Aurobay, or Horse Powertrain.
 
 * Large team, 7 people.
-* Tasks was shielded from the developers, manual intervention.
+* Tasks were shielded from the developers, manual intervention.
 
-* Started with a new workload, we where required to be there every step on the way.
-* Not even possible for teams follow our architectural principels fully.
+* Started with a new workload, we were required to be there every step on the way.
+* Not even possible for teams to follow our architectural principles fully.
 * For instance, IaC not possible, blocked from deploying parts of definition.
 
 * Done right, Cloud Adoption Framework.
 * Created using Azure Landing Zones, snapshot.
 * Scale not considered.
 
-* IaC was at best, an after thought. IaC not the leading source, exported nightly jobs.
+* IaC was, at best, an afterthought. IaC not the leading source, exported nightly jobs.
 
 * Inconsistencies in our environment.
-* Automations does not like inconsistencies.
+* Automations do not like inconsistencies.
 
 * Zero-trust to the extremes, for instance break-glass accounts with mfa fire proof lockers.
 * Never trust the developers.
@@ -77,14 +78,14 @@ image: './assets/devops.png'
 * Self-service within a secure, governed framework
 * The platform is our product, the developers our customers
 * Start with dirt trails, some will eventually become golden paths
-* Centralize and scale specialized knowledge, reducing cognitve and manual work
+* Centralize and scale specialized knowledge, reducing cognitive and manual work
 
 <!--
 * Platform Engineering is the application of DevOps principles at scale.
 * The platform is our product, the developers our customers
 * Self-service within a secure, governed framework
 * Start with dirt trails, some will eventually become golden paths
-* Centralize and scale specialized knowledge, reducing cognitve and manual work
+* Centralize and scale specialized knowledge, reducing cognitive and manual work
 * For Azure, Cloud Adoption Framework and specifically Azure Landing Zones is their way to handle platform engineering at scale
 -->
 
@@ -93,14 +94,14 @@ layout: image-left
 image: './assets/launch-pad.png'
 ---
 
-# What Is an Azure Landing Zones?
+# What Are Azure Landing Zones?
 
 * Azure Landing Zone = Secure, Governed Foundation for cloud workloads
 * Prepares Azure Environment with policies, connectivity, and shared services
 * Enables scalable and compliant workload deployments from day one
 
 <!--
-TO DO: REMOVE REPITIONS
+TO DO: REMOVE REPETITIONS
 
 * What is an Azure Landing Zone? It's the baseline architecture and configuration. 
 * Sets the stage for successfully running our workloads in the cloud. 
@@ -131,7 +132,7 @@ image: './assets/management-groups.svg'
   * **Online**: Internet-facing workloads, more autonomy
 
 <!--
-TO DO: Standard Mangement Groups overview split
+TO DO: Standard Management Groups overview split
 
 * Management groups are containers that sit above subscriptions.
 * Apply policies and access controls once, cascade down to subscriptions.
@@ -143,7 +144,7 @@ TO DO: Standard Mangement Groups overview split
 
 ---
 
-# Standard Mangement Groups overview
+# Standard Management Groups overview
 
 ---
 layout: image-right
@@ -154,13 +155,13 @@ image: './assets/policy.svg'
 
 * Automated guardrails at scale
 * Inherited from management groups
-* Enforce standards (allowed regions, requried tags, etc.)
+* Enforce standards (allowed regions, required tags, etc.)
 * Execute template deployment (e.g. inherit tags if not set)
 
 <!--
 * Automated guardrails at scale
 * Inherited from management groups
-* Enforce standards (allowed regions, requried tags, etc.)
+* Enforce standards (allowed regions, required tags, etc.)
 * Execute template deployment (e.g. inherit tags if not set)
 -->
 
@@ -172,7 +173,7 @@ image: './assets/democracy-vs-autocracy.jpg'
 # Azure Subscriptions
 
 * Guarded process
-* Leads to reuse and unclear boundries
+* Leads to reuse and unclear boundaries
 * [ALZ promotes](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/design-principles#subscription-democratization) democratization:
   * Units of management
   * Separate application environments
@@ -181,7 +182,7 @@ image: './assets/democracy-vs-autocracy.jpg'
   * Scalable management group hierarchy as a foundation
 
 <!--
-* Requesting a new subscripton, at the time, required a lot.
+* Requesting a new subscription, at the time, required a lot.
 * Sandbox, architecture diagram.
 * Once approved, creation manual, several elevated accounts.
 * Lead to teams not requesting new subscriptions for new workloads.
@@ -202,9 +203,9 @@ image: './assets/democracy-vs-autocracy.jpg'
 
 <!--
 * Horse Powertrain manufactures car parts.
-* Majority of our employees works in factories around the globe.
+* Majority of our employees work in factories around the globe.
 * Software we build and maintain supports factories, response time crucial.
-* A lot of infrastructure is on-prem, architectural principals promotes cloud first.
+* A lot of infrastructure is on-prem, architectural principles promote cloud first.
 * Hybrid cloud setup, network extends into the private networks of the factories and office sites.
 * To support this, we're following the hub-spoke network topology.
 * Centralized architecture where a hub virtual network serves as the central point of connectivity.
@@ -302,7 +303,7 @@ ol {
     * Hub-Spoke Topology
 1. Setup subscription vending, keep existing patterns
 1. Add network infrastructure vending to the subscription vending
-1. Automate DNS joins off private endpoints
+1. Automate DNS joining of private endpoints
 1. Plead our case to open 443 network traffic towards Azure 
 
 ---
@@ -423,7 +424,7 @@ Handle DNS joins through Azure Policies, provided through ALZ library and fix Pr
 </div>
 
 <!--
-We where lacking a proper private resolver DNS architecture. And, since no teams was allowed to manage their network resources, they had too request help from us, linking their VNets with the private DNS zones that they needed access to.
+We were lacking a proper private resolver DNS architecture. And, since no teams were allowed to manage their network resources, they had to request help from us, linking their VNets with the private DNS zones that they needed access to.
 -->
 
 ---
@@ -452,7 +453,7 @@ We where lacking a proper private resolver DNS architecture. And, since no teams
 </div>
 
 <!--
-This approach is refered to as "Centralized DNS Architecture" in the microsoft documentation. The other option covered in the documentation is "Distributed DNS Architecture".
+This approach is referred to as "Centralized DNS Architecture" in the Microsoft documentation. The other option covered in the documentation is "Distributed DNS Architecture".
 
 * Centralized DNS:
   * Spoke VNets use the Private DNS Resolvers
@@ -495,7 +496,7 @@ layout: section
 
 # The Impact
 
-* Subscriptions is no longer shielded through complicated request flows
+* Subscriptions are no longer shielded through complicated request flows
 * Virtual Network creation and amendment is a request away!
 * Private Endpoints can be created by anyone:
   * They can be included in IaC definitions
@@ -503,7 +504,7 @@ layout: section
 * We're no longer a team driven by tickets and have time to innovate
 
 <!--
-Transistion to next slide: "Innovations such as:"
+Transition to next slide: "Innovations such as:"
 -->
 
 ---
