@@ -155,12 +155,14 @@ image: './assets/policy.svg'
 * Inherited from management groups
 * Enforce standards (allowed regions, required tags, etc.)
 * Execute template deployment (e.g. inherit tags if not set)
+* Policies should align with Microsoft Defender for Cloud
 
 <!--
 * Automated guardrails at scale
 * Inherited from management groups
 * Enforce standards (allowed regions, required tags, etc.)
 * Execute template deployment (e.g. inherit tags if not set)
+* Policies should align with Microsoft Defender for Cloud
 -->
 
 ---
