@@ -45,6 +45,7 @@ layout: section
 * Started with a new workload, we were required to be there every step on the way.
 * Not even possible for teams to follow our architectural principles fully.
 * For instance, IaC not possible, blocked from deploying parts of definition.
+* To be fair, we where under a lot time pressure in the early days.
 -->
 
 ---
@@ -60,6 +61,8 @@ image: './assets/get-it-done.png'
 * Inconsistences in our environment.
 
 <!--
+* Aurobay started in 2021, based on Volvos combustion engine production.
+* Tight time frame for the exit.
 * Done right, Cloud Adoption Framework.
 * Created using Azure Landing Zones, snapshot.
 * Scale not considered.
