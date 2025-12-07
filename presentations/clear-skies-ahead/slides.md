@@ -39,12 +39,27 @@ layout: section
 * I joined Aurobay, or Horse Powertrain.
 
 * Large team, 7 people.
+* A team driven by tickets.
 * Tasks were shielded from the developers, manual intervention.
 
 * Started with a new workload, we were required to be there every step on the way.
 * Not even possible for teams to follow our architectural principles fully.
 * For instance, IaC not possible, blocked from deploying parts of definition.
+-->
 
+---
+layout: image-left
+image: './assets/get-it-done.png'
+---
+
+# Time Pressure
+
+* Fast exit from Volvo, "just fix it".
+* Platform based on [Cloud Adoption Framework](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/).
+* Infrastructure-as-Code, at best, an afterthought.
+* Inconsistences in our environment.
+
+<!--
 * Done right, Cloud Adoption Framework.
 * Created using Azure Landing Zones, snapshot.
 * Scale not considered.
@@ -57,12 +72,6 @@ layout: section
 * Zero-trust to the extremes, for instance break-glass accounts with mfa fire proof lockers.
 * Never trust the developers.
 -->
-
----
-
-# Split "Where We Were"
-
-* Fast exit from Volvo, just fix it
 
 ---
 layout: image-right
@@ -101,21 +110,15 @@ image: './assets/launch-pad.png'
 * Enables scalable and compliant workload deployments from day one
 
 <!--
-TO DO: REMOVE REPETITIONS
-
 * What is an Azure Landing Zone? It's the baseline architecture and configuration. 
 * Sets the stage for successfully running our workloads in the cloud. 
 * Launchpad — Strong, well-prepared foundation for your mission to succeed.
 * Rockets can launch faster and more frequently due to our platform.
 * Foundation not just about spinning up resources; security, governance and connectivity.
-* Bumpers in a bowling alley keep the ball headed toward the pins. A well designed platform will keep the workload in line when it comes to organizational standards.
+* Bumpers in a bowling alley keep the ball headed toward the pins.
 * Enables team to innovate freely while staying within safe boundaries.
 * With an Azure Landing Zone in place, we avoid the “wild west” of unmanaged cloud resources.
-* Every workload launches from the same secure and governed foundation.
-* Enables scalability, operational excellence, and peace of mind as our cloud adoption grows.
 * Let's look at some of the key building blocks of the platform.
-
-TO DO: Introduce building blocks
 -->
 
 ---
@@ -127,13 +130,12 @@ image: './assets/management-groups.svg'
 
 * Organize subscriptions into a logical structure
 * Apply governance (policies, RBAC) at scale through inheritance
-* ALZ defines standard management groups:
+* User-facing management groups:
   * **Corp**: Workloads requiring on-prem connectivity, stricter governance
   * **Online**: Internet-facing workloads, more autonomy
+  * **Sandbox**: Short-lived experiments, little governance
 
 <!--
-TO DO: Standard Management Groups overview split
-
 * Management groups are containers that sit above subscriptions.
 * Apply policies and access controls once, cascade down to subscriptions.
 * In Azure Landing Zones, the Corp management group is for workloads that need to connect.
@@ -141,10 +143,6 @@ TO DO: Standard Management Groups overview split
 * In cases with both is needed, recommended to expose API through Azure API Management.
 * Teams need to choose which landing zone fits their workload's requirements.
 -->
-
----
-
-# Standard Management Groups overview
 
 ---
 layout: image-right
@@ -213,8 +211,6 @@ image: './assets/democracy-vs-autocracy.jpg'
 * The hub facilitates secure routing, cross-premises connectivity, DNS management, and remote access.
 * Effective IP address management is critical.
 * Huge flaw in arch diagram, lead to headaches and extra work.
-
-TO DO: Hub-and-spoke into new slide?
 -->
 
 ---
