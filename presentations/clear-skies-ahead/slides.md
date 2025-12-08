@@ -7,6 +7,7 @@ transition: slide-left
 image: './assets/clear-skies-ahead.jpg'
 layout: intro-image
 routerMode: 'hash'
+talkDurationMinutes: 45
 ---
 
 <div class="absolute bottom-15">
