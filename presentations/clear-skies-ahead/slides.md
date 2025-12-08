@@ -72,9 +72,6 @@ image: './assets/get-it-done.png'
 
 * Inconsistencies in our environment.
 * Automations do not like inconsistencies.
-
-* Zero-trust to the extremes, for instance break-glass accounts with mfa fire proof lockers.
-* Never trust the developers.
 -->
 
 ---
@@ -182,7 +179,6 @@ image: './assets/democracy-vs-autocracy.jpg'
   * Separate application environments
   * Self-service vending process
   * Offer multiple types to support differing requirements
-  * Scalable management group hierarchy as a foundation
 
 <!--
 * Requesting a new subscription, at the time, required a lot.
@@ -195,7 +191,6 @@ image: './assets/democracy-vs-autocracy.jpg'
   * Separate application environments
   * Self-service vending process
   * Offer multiple types to support differing requirements
-  * Scalable management group hierarchy as a foundation
 -->
 
 ---
