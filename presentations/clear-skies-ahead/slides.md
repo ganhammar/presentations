@@ -87,8 +87,8 @@ image: './assets/devops.png'
 
 <br />
 
-* Self-service within a secure, governed framework
 * The platform is our product, the developers our customers
+* Self-service within a secure, governed framework
 * Start with dirt trails, some will eventually become golden paths
 * Centralize and scale specialized knowledge, reducing cognitive and manual work
 
