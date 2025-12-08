@@ -194,6 +194,23 @@ image: './assets/democracy-vs-autocracy.jpg'
 -->
 
 ---
+layout: image-right
+image: './assets/private-endpoint.svg'
+---
+
+# Private Endpoint
+
+* A network interface that uses a private IP from your virtual network
+* Private, secure, connectivity powered by Azure Private Link
+* Access existing DNS service configuration privately through private DNS zones
+
+<!--
+* A network interface that uses a private IP from your virtual network
+* Private, secure, connectivity powered by Azure Private Link
+* Access existing DNS service configuration privately through private DNS zones
+-->
+
+---
 
 # Network Architecture Design
 
@@ -211,23 +228,6 @@ image: './assets/democracy-vs-autocracy.jpg'
 * The hub facilitates secure routing, cross-premises connectivity, DNS management, and remote access.
 * Effective IP address management is critical.
 * Huge flaw in arch diagram, lead to headaches and extra work.
--->
-
----
-layout: image-right
-image: './assets/private-endpoint.svg'
----
-
-# Private Endpoint
-
-* A network interface that uses a private IP from your virtual network
-* Private, secure, connectivity powered by Azure Private Link
-* Access existing DNS service configuration privately through private DNS zones
-
-<!--
-* A network interface that uses a private IP from your virtual network
-* Private, secure, connectivity powered by Azure Private Link
-* Access existing DNS service configuration privately through private DNS zones
 -->
 
 ---
