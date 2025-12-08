@@ -121,7 +121,6 @@ image: './assets/launch-pad.png'
 * Foundation not just about spinning up resources; security, governance and connectivity.
 * Bumpers in a bowling alley keep the ball headed toward the pins.
 * Enables team to innovate freely while staying within safe boundaries.
-* With an Azure Landing Zone in place, we avoid the “wild west” of unmanaged cloud resources.
 * Let's look at some of the key building blocks of the platform.
 -->
 
