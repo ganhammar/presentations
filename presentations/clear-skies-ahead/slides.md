@@ -7,7 +7,7 @@ transition: slide-left
 image: './assets/clear-skies-ahead.jpg'
 layout: intro-image
 routerMode: 'hash'
-talkDurationMinutes: 45
+duration: 45min
 ---
 
 <div class="absolute bottom-15">
@@ -88,14 +88,14 @@ image: './assets/devops.png'
 * The platform is our product, the developers our customers
 * Self-service within a secure, governed framework
 * Start with dirt trails, some will eventually become golden paths
-* Centralize and scale specialized knowledge, reducing cognitive and manual work
+* Centralize and scale specialized knowledge, reducing cognitive load
 
 <!--
 * Platform Engineering is the application of DevOps principles at scale.
 * The platform is our product, the developers our customers
 * Self-service within a secure, governed framework
 * Start with dirt trails, some will eventually become golden paths
-* Centralize and scale specialized knowledge, reducing cognitive and manual work
+* Centralize and scale specialized knowledge, reducing cognitive load
 * For Azure, Cloud Adoption Framework and specifically Azure Landing Zones is their way to handle platform engineering at scale
 -->
 
